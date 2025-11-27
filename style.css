@@ -1,0 +1,329 @@
+/* Desktop */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+.navbar {
+  background-color: rgb(0, 0, 51);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* hero section */
+.hero {
+  background-image: url('https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/hero-cruise.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero div {
+  text-align: center;
+  color: white;
+  font-size: smaller;
+}
+.hero div p {
+  margin: 10px 0;
+}
+
+.hero div button {
+  color: white;
+  background-color: darkorange;
+  border: none;
+  padding: 15px;
+  /* border-radius: 5px; */
+  margin: 10px;
+}
+
+/* Discover */
+/* header */
+main {
+  padding: 30px 20px;
+}
+
+.heading {
+  border-left: 4px solid orange;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.popular {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pills {
+  display: flex;
+  gap: 10px;
+}
+.pill {
+  display: flex;
+  gap: 5px;
+  padding: 5px 8px;
+  border-radius: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.pill img {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.banner {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.banner .banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-text {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: white;
+}
+.banner-text h3 {
+  text-transform: uppercase;
+  font-size: medium;
+}
+.banner-text p {
+  font-size: small;
+}
+.banner-sava-icon img {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(102, 101, 101);
+  padding: 3px;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.card {
+  position: relative;
+  cursor: pointer;
+}
+.card-img img {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+.card-sava-icon img {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(102, 101, 101);
+  padding: 3px;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* contact */
+#contact {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+#contact h3 {
+  border-bottom: 4px solid orange;
+  margin-bottom: 30px;
+}
+.contact_info {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.contact {
+  border: 1px solid gray;
+  width: 50%;
+  padding: 10px 20px;
+  text-align: center;
+}
+.contact h4 {
+  margin-bottom: 10px;
+}
+.hours {
+  text-align: center;
+  border: 1px solid gray;
+  width: 50%;
+  padding: 10px 20px;
+}
+.hours h4 {
+  margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+  background-color: #000033;
+  color: white;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 20px 40px;
+}
+.footer-content h2 {
+  font-size: large;
+  /* font-weight: 100px; */
+  color: orange;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.footer-content p {
+  margin-bottom: 6px;
+}
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+#follow {
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+.hr {
+  opacity: 40%;
+  background-color: gray;
+  height: 1px;
+}
+.footer_rights {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 2px;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .heading {
+    border-left: none;
+    align-items: center;
+    text-align: center;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .banner-text h3 {
+    font-size: smaller;
+  }
+  .banner-text p {
+    font-size: x-small;
+  }
+  .banner-sava-icon img {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(102, 101, 101);
+    padding: 2px;
+  }
+  .card-sava-icon img {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(102, 101, 101);
+    padding: 2px;
+  }
+  .card-img img {
+    height: 25vh;
+  }
+  .contact_info {
+    flex-direction: column;
+  }
+  .contact_info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact {
+    width: 100%;
+  }
+  .hours {
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .popular {
+    flex-direction: column;
+  }
+  .pills {
+    flex-direction: column;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner-text h3 {
+    font-size: xx-small;
+  }
+  .banner-text p {
+    font-size: xx-small;
+  }
+  .banner-sava-icon img {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(102, 101, 101);
+    padding: 1px;
+  }
+  .card-sava-icon img {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(102, 101, 101);
+    padding: 1px;
+  }
+  .card-img img {
+    height: 22vh;
+  }
+}
